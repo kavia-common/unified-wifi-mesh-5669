@@ -6,3 +6,4 @@ install/bin/
 *.log
 DPPURI_sendable.json
 *.a
+.file_activity_report.json
