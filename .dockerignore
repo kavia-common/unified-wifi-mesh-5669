@@ -1,0 +1,31 @@
+# Ignore VCS and editor files
+.git
+.gitignore
+.vscode
+.devcontainer/**
+
+# Build artifacts
+build/
+cmake-build*/
+out/
+dist/
+*.o
+*.a
+*.so
+*.dll
+*.dylib
+
+# Test binaries
+tests/**/build/
+tests/**/out/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Go build caches (not needed in build context)
+go/pkg
+go/bin
+
+# Large docs not needed in image
+attachments/

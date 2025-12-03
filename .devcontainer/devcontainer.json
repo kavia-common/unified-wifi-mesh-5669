@@ -1,0 +1,25 @@
+{
+  "name": "Unified Wi‑Fi Mesh 5669 Dev",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "args": {
+      "GOVERSION": "1.22.7"
+    }
+  },
+  "workspaceFolder": "/app/unified-wifi-mesh-5669",
+  "remoteUser": "root",
+  "features": {},
+  "postCreateCommand": "go version && cd src/rdkb-cli && GO111MODULE=on go mod download",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "twixes.cmake",
+        "eamodio.gitlens"
+      ]
+    }
+  }
+}
